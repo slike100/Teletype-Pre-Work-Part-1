@@ -40,3 +40,18 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+body {
+	 max-width: 275px;
+	 margin: auto;
+}
+
+.top {
+	background-color: #424242;
+	margin: auto;
+	padding: 10px
+
+}
+.moneyneeded {
+	font-weight: bold;
+}
