@@ -50,13 +50,13 @@ body {
 		max-height: 500px;
 	 	text-align: center;
 		letter-spacing: .05em;
+		font-family: Avenir-Book, Calibri, sans-serif;
 }
 
 /* $167 still needed for this project */
 
 .top {
 	font-size: 12px;
-	font-family: Avenir-Book;
 	background-color: #424242;
 	color: white;
 	letter-spacing: .05em;
@@ -114,7 +114,6 @@ hr {
 }
 
 .boxparagraph {
-	font-family: Avenir-Book;
 	font-size: 11px;
 	color: #777;
 	margin: 10px 10px;
@@ -131,7 +130,6 @@ hr {
 .give {
 	font-size: 15px;
 	color: white;
-	font-family: Avenir-Book;
 	background-color: #1CBC2C;
 	width: 45%;
 	padding: 12px;
@@ -141,10 +139,9 @@ hr {
 }
 
 #money {
-	font-family: Avenir-Book;
 	padding: 12px;
 	width: 45%;
-	margin: 10px 10px 5px 0;
+	margin: 10px 10px 5px 5px;
 	float: left;
 }
 
@@ -169,26 +166,26 @@ input::placeholder {
 	clear: both;
 }
 
-.save {
+.save, .friends {
 	padding: 0px 10px;
-	margin: 12px;
 	color: #777;
 	background-color: #eaeaea;
 	font-weight: bold;
 	height: 30px;
 	font-size: 10px;
-	font-family: Avenir-Book;
-	width: 40%;
+	width: 50%;
 }
 
 .friends {
-	padding: 0px 10px;
-	margin: 12px;
-	color: #777;
-	background-color: #eaeaea;
-	font-weight: bold;
-	height: 30px;
-	font-size: 10px;
-	font-family: Avenir-Book;
-	width: 40%;
+	margin: 10px 0 10px 7px;
+}
+
+.save {
+	margin: 10px 7px 10px 0;
+}
+
+.bottom_buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
