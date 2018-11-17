@@ -97,7 +97,7 @@ hr {
 	height: 12px;
 	width: 200px;
 	float: left;
-	border: 0;
+	border: 1px solid #eaeaea;
 }
 
 .hrtwo {
@@ -154,6 +154,10 @@ input::placeholder {
 
 }
 
+.donate{
+
+}
+
 .why {
 	font-size: 11px;
 	text-align: left;
@@ -161,7 +165,7 @@ input::placeholder {
 	color: #20A1D4;
 	margin top: 0;
 	margin: 0 10px;
-	position: relative;
+	clear: both;
 }
 
 .save {
