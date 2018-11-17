@@ -47,6 +47,7 @@ body {
 
 	 	margin: 2em auto;
 	 	max-width: 275px;
+		max-height: 500px;
 	 	text-align: center;
 		letter-spacing: .05em;
 }
@@ -57,15 +58,38 @@ body {
 	font-size: 12px;
 	font-family: Avenir-Book;
 	background-color: #424242;
-	margin-bottom: 10px;
-	padding: 10px;
 	color: white;
 	letter-spacing: .05em;
-	border-radius: 4px;
 }
 .moneyneeded {
 	font-weight: bold;
 }
+
+.arrow_box {
+	position: relative;
+	background: #424242;
+	border: 1px solid #424242;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-top-color: #424242;
+	border-width: 7px;
+	margin-left: 100px;
+}
+
 
 hr {
 	color: #f00;
@@ -73,6 +97,7 @@ hr {
 	height: 12px;
 	width: 200px;
 	float: left;
+	border: 0;
 }
 
 .hrtwo {
@@ -83,17 +108,19 @@ hr {
 /* The main box with time left and donation form */
 
 .box {
-	padding: 20px;
+	padding: 20px 10px;
 	border: 1px solid #eaeaea;
+	box-shadow: 1px 1px #d8d8d8;
 }
 
 .boxparagraph {
 	font-family: Avenir-Book;
-	font-size: 12px;
+	font-size: 11px;
 	color: #777;
-	margin-bottom: 10px;
+	margin: 10px 10px;
 	text-align: left;
-	max-width: 250px;
+	max-width: 275px;
+	line-height: 1.7em;
 }
 
 .threedays {
@@ -109,6 +136,7 @@ hr {
 	padding: 12px;
 	margin: 10px 5px;
 	border-radius: 4px;
+	float: right;
 }
 
 #money {
@@ -116,6 +144,14 @@ hr {
 	padding: 12px;
 	width: 100px;
 	margin: 10px 10px 5px 0;
+	float: left;
+}
+
+input::placeholder {
+  color: #777;
+	font-weight: bold;
+	font-size: 15px;
+
 }
 
 .why {
@@ -124,9 +160,11 @@ hr {
 	font-style: italic;
 	color: #20A1D4;
 	margin top: 0;
+	margin: 0 10px;
+	position: relative;
 }
 
-.button {
+.save {
 	padding: 0px 10px;
 	margin: 12px;
 	color: #777;
@@ -135,4 +173,19 @@ hr {
 	height: 30px;
 	font-size: 10px;
 	font-family: Avenir-Book;
+	float: left;
+	width: 40%;
+}
+
+.friends {
+	padding: 0px 10px;
+	margin: 12px;
+	color: #777;
+	background-color: #eaeaea;
+	font-weight: bold;
+	height: 30px;
+	font-size: 10px;
+	font-family: Avenir-Book;
+	float: right;
+	width: 40%;
 }
